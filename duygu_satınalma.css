@@ -1,0 +1,229 @@
+
+:root{
+  --main-color:rgb(231, 223, 202);
+  --black-color:#121111;
+  --o-border:0.1rem solid rgba(68, 91, 218, 0.5);
+}
+*{
+  font-family: "Poppins", sans-serif;
+   margin:0;
+   padding: 0;
+  box-sizing:border-box;
+  outline:none;
+  border:none;
+  text-decoration: none; 
+  text-transform: capitalize;
+  transition: 0.2s ease;
+  
+}
+html::-webkit-scrollbar{
+ width: 0.8rem;
+ background-color: white;
+}
+html{
+  font-size:62.5%;
+overflow-x:hidden;
+scroll-padding-top: 9rem;
+scroll-behavior:smooth;
+}
+body{
+  background-color: var(--main-color); 
+}
+section{
+  padding:3.5rem 7%;
+}
+.btn{
+  margin-top: 1rem;
+  display:inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 1rem;
+  font-size: 1.7rem;
+  color:#fff;
+  background-color: var(--black-color);
+  cursor: pointer;
+}
+.btn:hover{
+ opacity: 0.9;
+}
+
+.heading{
+ color: var(--black-color);
+ color:#121111;
+ text-transform: uppercase;
+ font-size:4rem;
+ margin-bottom:3.5rem ;
+ border-bottom: 0.1 solid #121111 ;
+}
+.search-input{
+ font-size: 1.6rem;
+ color: var(--black-color);
+ padding: 1rem;
+ text-transform: none;
+ border-radius: 1rem;
+}
+.logo img{
+   height:5rem;}
+
+   .header.logo img{
+     height:5rem;}
+
+   /* header start*/
+
+
+.header{
+position:sticky;/* aşağı beraber indirme */
+top:0; 
+background-color:rgb(252, 252, 252);
+display:flex ; /* yan yana olmasını sağlar */
+align-items: center;
+justify-content: space-between;
+padding: 0 7%;
+margin:2rem 7%;
+border-radius: 3rem;
+box-shadow:0px 0px 17px -2px rgba(0,0,0,0.75); /* gölgelik ekleme*/
+z-index:1000;
+}
+   .header .navbar a{
+     margin: 0.1rem;
+     font-size: 1.6rem;
+     color:var(--black-color);
+     border-bottom: 0.1rem solid transparent;
+   }
+   .header .navbar .active,
+   .header .navbar a:hover{
+     border-color:var(--main-color) ;
+     padding-bottom:0.5rem;
+   }
+   .header .button button{
+     cursor: pointer;
+     font-size: 2.5rem;
+     margin-left:2rem;
+     background-color: transparent;
+   }
+/* Dropdown Ana Yapısı */
+.dropdown {
+  position: fixed; /* Ekranda sabit durmasını sağlar */
+  top: 50px;       /* Sayfanın üst kısmından uzaklık */
+  left: 0;         /* Sayfanın sol tarafına hizalar */
+  width: 200px;    /* Menünün genişliği */
+  background-color: #f9f9f9; /* Arka plan rengi */
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2); /* Hafif bir gölge */
+  border-radius: 5px; /* Köşeleri yuvarlatır */
+  z-index: 1000;   /* Diğer elemanların üstünde kalmasını sağlar */
+}
+
+/* Dropdown Butonu */
+.dropdown button {
+  background-color: #ffffff;
+  color: #141111;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd; /* İnce bir çerçeve */
+  border-radius: 5px 5px 0 0; /* Üst köşeleri yuvarlatır */
+  cursor: pointer;
+  width: 100%; /* Buton genişliği menüyle aynı */
+}
+
+/* Dropdown İçeriği */
+.dropdown-content {
+  display: block; /* Sürekli görünür */
+  background-color: #eae0e0;
+  width: 100%; /* İçeriğin genişliği menüyle aynı */
+  border-radius: 0 0 5px 5px; /* Alt köşeleri yuvarlatır */
+}
+
+.dropdown-content a {
+  color: rgb(24, 20, 20);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px; /* Yazı boyutu */
+  transition: background-color 0.2s ease; /* Hover animasyonu */
+}
+
+.dropdown-content a:hover {
+  background-color: #d4d4d4; /* Hover efekti */
+}
+
+/* Sayfa genel ayarları */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+
+/* Kitap Listesi Stili */
+.kitap-listesi {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.kitap {
+  display: flex;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(230, 228, 228, 0.1);
+}
+
+.kitap-resim {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.kitap-bilgi {
+  padding: 1rem;
+  flex: 1;
+}
+
+.kitap-bilgi h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.kitap-bilgi p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.satin-al {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.satin-al:hover {
+  background-color: #45a049;
+}
+.kitap-bilgi {
+  padding: 1rem;
+  text-align: left;
+}
+
+.kitap-ozet {
+  font-size: 1rem; /* Daha küçük bir yazı tipi */
+  color: #666; /* Hafif gri renk */
+  margin-top: 0.5rem;
+  line-height: 1.5; /* Satırlar arası boşluk */
+  text-align: justify; /* Metni iki yana yasla */
+  height: 60px; /* Özetin alanını sınırlayarak taşmasını engelle */
+  overflow: hidden; /* Taşan metni gizle */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Özetin 3 satırla sınırlı olmasını sağla */
+  -webkit-box-orient: vertical;
+}
+
+.kitap-bilgi .satin-al {
+  margin-top: 1rem;
+}
